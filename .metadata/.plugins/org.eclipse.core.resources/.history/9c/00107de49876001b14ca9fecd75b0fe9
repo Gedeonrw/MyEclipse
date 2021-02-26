@@ -1,0 +1,14 @@
+package lab9Part2.q9;
+
+public class CubicIterate {
+
+	public static void main(String[] args) {
+		
+		nextCubes(4);
+
+	}
+	public static int nextCubes(int n) {
+
+	 return (int)Math.pow(Math.floor(Math.cbrt(n)) + 1,3);
+}
+}

@@ -1,0 +1,10 @@
+package lab9.q4A;
+
+public class PrimeStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

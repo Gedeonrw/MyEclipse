@@ -1,0 +1,14 @@
+public class Impl {
+  class TestEven implements TestNumber{
+
+	@Override
+	public boolean test(int n) {
+		return n%2 ==0;
+	}
+	  
+  }
+  
+  public static void main(String [] args) {
+	  TestEven te = new TestEven();
+  }
+}

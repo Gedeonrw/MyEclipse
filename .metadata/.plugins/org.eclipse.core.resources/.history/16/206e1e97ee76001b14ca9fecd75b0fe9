@@ -1,0 +1,25 @@
+package Generics;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Generics {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Integer> ints = Arrays.asList(1, 2, 3, 4);
+		List<Number> nums = new ArrayList<>();
+		nums.add(3);
+		nums.add(4);
+		nums.add(4.5);
+		List<? extends Number> extNum = Arrays.asList(1, 2, 3, 4, 5);
+		List<? super Number> supNum = Arrays.asList(1, 2, 3, 4, 5);
+//		supNum.add(5);
+		extNum.stream().forEach(x-> System.out.println(x));
+		
+		
+
+	}
+
+}

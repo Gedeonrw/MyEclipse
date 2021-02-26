@@ -1,0 +1,10 @@
+package lesson11.labs.prob5;
+
+public class SecondSmallest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

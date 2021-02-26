@@ -1,0 +1,21 @@
+package lab9Part2.q9;
+
+import java.util.stream.IntStream;
+
+public class CubicIterate {
+
+	public static void main(String[] args) {
+		
+		nextCubes(4);
+
+	}
+	public static void nextCubes(int num) {
+		IntStream nums = IntStream.iterate(1, n -> (int) Math.pow((int)Math.sqrt(n) + 1, 2)).limit(num);
+		nums.forEach(System.out::println);
+	}
+	
+//	public static int nextCubes(int n) {
+//
+//	 return (int)Math.pow(Math.floor(Math.cbrt(n)) + 1,3);
+//}
+}

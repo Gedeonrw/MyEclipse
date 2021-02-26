@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="lesson6/lecture/javafx/fxmlexample/|lesson6/lecture/javafx/helloworld/|lesson6/lecture/javafx/login/|lesson6/lecture/javafx/logincss/|lesson6/lecture/javafx/secondwindow/|lesson6/lecture/javafx/tables/" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/DataAccess"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

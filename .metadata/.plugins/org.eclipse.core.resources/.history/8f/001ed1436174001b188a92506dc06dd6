@@ -1,0 +1,14 @@
+package lab9.q4A;
+
+import java.util.stream.Stream;
+
+public class PrimeStream {
+
+	private final Stream<Integer> primes = null;
+	public static void main(String[] args) {
+	
+		
+
+	}
+
+}

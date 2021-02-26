@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;prob1&apos; to &apos;MppLearn/src/lab10&apos;&#x0D;&#x0A;- Original project: &apos;workspace-eclipse-for-students&apos;&#x0D;&#x0A;- Destination element: &apos;MppLearn/src/lab10&apos;&#x0D;&#x0A;- Original element: &apos;prob1&apos;" description="Copy folder" destination="=MppLearn/src&lt;lab10" element1="LecturesAndLabs/src/lesson10/labs/prob1" files="0" flags="589830" folders="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1614039051439" units="0" version="1.0"/>
+</session>

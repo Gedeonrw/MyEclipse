@@ -1,0 +1,11 @@
+package Generics;
+
+public class CountOccurancesStream1 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+	
+}

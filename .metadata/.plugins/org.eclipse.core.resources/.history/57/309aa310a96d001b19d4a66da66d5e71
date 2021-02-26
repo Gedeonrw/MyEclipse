@@ -1,0 +1,68 @@
+package edu.miu.cs.cs401.quiz2.bankingapp.model;
+import java.time.LocalDate;
+
+public class Customer {
+	
+	private String customerId;
+	private String name;
+	private LocalDate dateOfBirth;
+	
+	private Account account;
+
+	
+		public Customer(String customerId, String name, LocalDate dateOfBirth,String accountNumber, double balance){
+		this.customerId = customerId;
+		this.name = name;
+		this.dateOfBirth = dateOfBirth;
+		this.account = new Account(accountNumber, balance, this);// here when you everytime you create an account object you have to create the customer object
+
+
+		
+		
+	}
+	
+
+	public String getCustomerId() {
+		return customerId;
+	}
+
+
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public LocalDate getDateOfBirth() {
+		return dateOfBirth;
+	}
+
+
+	public void setDateOfBirth(LocalDate dateOfBirth) {
+		this.dateOfBirth = dateOfBirth;
+	}
+
+
+	public static void main(String[] args) {
+
+
+
+	}
+
+
+	@Override
+	public String toString() {
+		return "Customer [customerId=" + customerId + ", name=" + name + ", dateOfBirth=" + dateOfBirth + ", account="
+				+ account + "]";
+	}
+
+}

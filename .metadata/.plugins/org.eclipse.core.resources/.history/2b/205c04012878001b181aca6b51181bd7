@@ -1,0 +1,9 @@
+package lesson6.labs.prob1;
+
+import javafx.application.Application;
+import javafx.stage.Stage;
+
+ public class Lab1 extends Application{
+	 public void start(Stage primaryStage) throws Exception {
+	
+}

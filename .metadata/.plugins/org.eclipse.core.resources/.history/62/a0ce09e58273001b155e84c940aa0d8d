@@ -1,0 +1,20 @@
+package lambda.one;
+
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class RandonWithGenerate {
+
+	public static void main(String[] args) {
+//		List<Double> st = Stream.generate(Math::random).limit(10).collect(Collectors.toList());
+//		System.out.println(st);
+		
+		
+		var ints = Stream.iterate(1, x->x+1).collect(Collectors.toList());
+		System.out.println(ints);
+				
+
+	}
+
+}

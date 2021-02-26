@@ -1,0 +1,21 @@
+public class Main {
+
+	public static void main(String[] args) {
+		class TestEven implements TestNumber {
+			@Override
+			public boolean test(int n) {
+				return n % 2 == 0;
+			}
+		}
+		TestNumber te1 = new TestNumber() {
+
+			@Override
+			public boolean test(int n) {
+				return n % 2 == 0;
+			}
+		}
+
+		TestEven te = new TestEven();
+		System.out.println(te.test(6));
+	}
+}

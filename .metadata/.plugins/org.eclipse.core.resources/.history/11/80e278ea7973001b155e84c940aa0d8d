@@ -1,0 +1,60 @@
+package Assignement9;
+
+import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+
+import dataaccess.DataAccess;
+import dataaccess.DataAccessFacade;
+
+interface Animal{
+	boolean test(Integer i);
+}
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println(allWhoseZipContains3());
+		System.out.println(allHavingAtLeastTwoCopies());
+		System.out.println(allHavingMultipleAuthors());
+
+	}
+	//Returns a list of all ids of LibraryMembers whose zipcode contains the digit 3
+	public static List<String> allWhoseZipContains3() {
+		DataAccess da = new DataAccessFacade();
+		Collection<LibraryMember> members = da.readMemberMap().values();
+		List<LibraryMember> mems = new ArrayList<>();
+		mems.addAll(members);
+		//implement
+		Function<LibraryMember, String> func =  x-> x.getMemberId();
+		List<String> listIds = mems.stream()
+		 .filter((LibraryMember x) -> x.getAddress().getZip().contains("3"))
+		 .map(func).collect(Collectors.toList());
+		return listIds;
+	 
+	}
+
+	//Returns a list of all ids of Books that have at least 2 copies
+	public static List<String> allHavingAtLeastTwoCopies() {
+		DataAccess da = new DataAccessFacade();
+		Collection<Book> books = da.readBooksMap().values();
+		List<Book> bs = new ArrayList<>();
+		bs.addAll(books);
+		//implement
+		return null;
+		
+	}
+	
+	//Returns a list of all isbns of  Books that have multiple authors
+	public static List<String> allHavingMultipleAuthors() {
+		DataAccess da = new DataAccessFacade();
+		Collection<Book> books = da.readBooksMap().values();
+		List<Book> bs = new ArrayList<>();
+		bs.addAll(books);
+		//implement
+		return null;
+		
+		}
+
+}

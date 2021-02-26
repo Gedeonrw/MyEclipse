@@ -1,0 +1,32 @@
+package lab9.q4A;
+
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.stream.Stream;
+
+public class InfiniteStrm {
+
+	public static void main(String[] args) {
+		
+	
+	}
+static Predicate<Integer> isPrime = n -> {
+	if (n<2) return false;
+	for (int i = 2; i*i <= n; i++) {
+	 	if(n % i == 0)  return false;
+	 	}
+	return true;
+	};
+		public static Function<Integer, Integer> nextPrime = a ->{
+			for (int i = a +1;; i++) {
+				if(isPrime.test(i)) return i;
+			}
+				
+			};
+		
+			public static final Stream<Integer> primes = Stream.iterate(2, nextPrime::apply);
+			
+			public static Stream<Integer> getPrimes(){
+				return primes;
+			}
+}

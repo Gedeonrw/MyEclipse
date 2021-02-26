@@ -1,0 +1,10 @@
+package lesson6.labs.prob2;
+
+public class StringFx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
